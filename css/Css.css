@@ -1,0 +1,28 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: burlywood;
+}
+#cabecera {
+    margin-top: 15px;
+    background-color: antiquewhite;
+}
+#ContenidoPrincipal {
+    background-color: cadetblue;
+}
+#pie {
+    margin-bottom: 15px;
+    background-color: cornflowerblue;
+}
+#Articulo {
+    background-color: lightsalmon;
+}
+#mapa {
+    background-color: chocolate;
+}
+table {
+    border-collapse: collapse;
+}
+th, td {
+    border: solid gray;
+}

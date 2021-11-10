@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <div id="cabecera">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>AE2.1</title>
+        <ul>
+            <a href="../index.html"><li>Tim Berners-Lee</li></a> 
+            <a href="circulo.html"><li>Portfolio</li></a>
+            <a href="triangulo.html"><li>Tabla de Precios</li></a>
+            <a href="rectangulo.html"><li>Contactame</li></a>
+        </ul> 
+        <img src="../imagenes/imagen-menu.png" usemap="#mapa" >
+        <map name="#mapa" >
+            <area alt="Ir a Biografía" shape="rect" coords="16, 45, 107, 132" href="../index.html" />
+            <area alt="Ir a Portfolio" shape="circle" coords="171, 91, 45" href="circulo.html" />
+            <area alt="Ir a Precios" shape="poly" coords="231, 135, 287, 43, 343, 134" href="triangulo.html" />
+            <area alt="Ir a Contactos" shape="rect" coords="353,36, 436, 137" href="rectangulo.html" />
+        </map>
+    </div>
+    <link rel="stylesheet" href="../css/Css.css">
+</head>
+<body>
+    <div id="ContenidoPrincipal">
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=    <div id="rectangulo.html">
+        <h1>Contactame</h1> <tr>
+            <h2>Formulario de contacto</h2>
+        </tr>
+       <form action="Datos_personales.php" method="post">
+           <fieldset>
+           <legend>Datos Personales</legend>
+           <label for="nombre">Nombre:</label>  <input type="text" name="nombre" value="" maxlength="20" placeholder="Introduce tu nombre..." > <br>
+           <label for="apellidos">Apellidos:</label>  <input type="text" name="apellidos" value="" maxlength="20" placeholder="Introduce tus apellidos..." > <br>
+           <label for="email">Email:</label> <input type="email" name="email" value=""> <br>
+           <label for="FechaNacimiento">Fecha de Nacimiento:</label>  <input type="date" name="FechaNacimiento"> <br>
+           <label for="edad">Edad:</label> <input type="number" name="edad" min="1" max="140" > <br>
+           <label for="sexo">Sexo:</label> <input type="radio" name="Sexo" value="hombre" checked="checked" /> Hombre <input type="radio" value="mujer" name="Sexo" /> Mujer <br>
+           <label for="so">País:</label>
+             <select name="so" id="so">
+                 <option value="" selected="selected">selecciona</option>
+                 <option value="España">España</option>
+                 <option value="Francia">Francia</option>
+                 <option value="Alemania">Alemania</option>
+                 <option value="Mexico">Mexico</option>
+             </select>
+           </fieldset>
+           <fieldset>
+              <legend>Otros Datos</legend>
+              <label for="mensaje">Mensaje:</label> <textarea name="mensaje" id="descripcion" cols="30" rows="10" placeholder="Ecribe tu mensaje..." ></textarea> <br>
+              <label for="adejunta">Adjunta una foto</label> <input type="file" name="adjunto"> <br>
+            <input type="checkbox" name="boletin_diario" required value=""/>He leído las condiciones... 
+            <p>
+                <input type="reset" name="borrar" value="Limpiar">
+                <input type="submit" name="enviar" value="Enviar">
+            </p>
+            </fieldset>
+       </form>
+    </div>
+    <br>
+       <div id="mapa">
+         <h2>Centro de referencia</h2>
+         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28062.491469203913!2d-16.286247761902267!3d28.455100179223436!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xc41cceee5a8035f%3A0xab9f2a74d9e68b51!2sCIFP%20C%C3%A9sar%20Manrique!5e0!3m2!1ses!2ses!4v1636502225021!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+       </div>
+    <br>
+    <div id="pie">
+        © 2040 <a href="../index.html">www.MiSitio.com</a> 
+    </div>
+</body>
+</html>
